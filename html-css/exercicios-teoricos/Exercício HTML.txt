@@ -1,0 +1,91 @@
+Exercício 1
+são os elementos q informão para o navegador, o que é cabeçalho, corpo ou rodapé de uma pagina ou do site.
+ Devemos usar para o código ficar mais legível e bem estruturado,
+pra que quando um outro desenvoldedor ter acesso,
+ele possa entender e modificar o código com mais facilidade.
+ alguns dos elementos semanticos são, MAIN, FOOTER, H1, TITLE.
+
+Exerício 2 
+são elementos que não ocupão toda a estenção da pagina, eles ocupam somente a largura de seu conteudo, uns exemplos são;
+ SPAN: funciona como um containe, pode poer texto nele.
+ BR: uma tag que quebra linha, pode ser posto em um paragafo.
+ a: um elemento ancora que define um hiperlink.
+
+Exercício 3
+ já os elementos em bloco ocupam toda extenção da pagina, 
+todo espaço do elemento pai, independente de seu conteudo.
+por exemplo HEADER, define o cabeçalho da página.
+ MAIN, conteudo principal da página.
+ FOOTER, o rodapé da página
+
+Exercício 4
+ ATL é um texto no código html que descrever uma determinada imagem,
+ caso a imagem anexada no código esteja corrompida, este texto serve para q o leitor tenha uma noção
+de qual conteúdo deveria estar ali. 
+
+Exercício 5
+ o valor que você der a propriedade de um determinado elemento, vai se expor em todo seu conteudo,
+ex. elemento BODY, pondo um paragrafo (<p>), com a propriedade color laranja, todos os paragrafos q forem postos
+no elemento BODY seram de cor laranja.
+
+<body>
+  <p>fui na espenha buscar meu chapél</p>
+  <p class "rosa">azul e branco da cor daquele cél</p>
+  <p>olha palma,palma,palma, olha pé,pé, pé</p>
+
+
+body {
+  color: orange;
+}
+
+.rosa{
+  color: pink;
+}
+
+Exercício 6
+ É uma metodologia de facil entendimentopara qualquer um q tiver acesso ao código,
+ o Block é o elemento pai, no qual você nomeia com uma class,
+ o Element são os elementos filhos, no qual você também nomeia, caso queira uma modificação especifica, 
+e n queira q erde as modificaçoes feitas pno elemento pai.
+ E o Modifier é a modificação que sera feita.
+ Ex;
+
+.apresentacao {
+    margin: 15% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+Exercício 7
+medida absulota é exatamente como se entende, ex; mm, cm, in, px. 
+embora o pixel seja relativo ao aparelho onda a imagem sera exibida.
+essas medidas são fixas, é mais recomendado para meios de impreção.
+
+diferente das medidas absolutas, asmedidas relativas dependem de um valor de referência, ex; em, ex, ch, rem, %.
+você pode determinar a medida de um paragrafo de acordo com uma medida determinada no seletor universal por exemplo.
+
+* {
+  fonte-size : 15px;
+}
+
+ h1 {
+  fonte-size: 6em; //h1 vai ser 6x a fonte padrão do documento
+}
+
+ h2 {
+  fonte-size : 5em; //h2 vai ser 5x a fonte padrão do documento
+}
+
+Exercício 8
+vw (view width) e vh (view heigth) se baseia no tamanho da tela, caso você determine uma div pai com tamanho width: 200px
+ e uma div filho desta div pai com tamanho width: 50vw, ela não vai levar a div pai em consideração, mas sim a tela em si, ou o body
+ que é onde ela provaveumente esta alocada.
+1vw(largura de visualização) ou 1vh(altura de visualização) é igual a 1% da tela
