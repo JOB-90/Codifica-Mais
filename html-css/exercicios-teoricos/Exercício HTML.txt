@@ -7,7 +7,7 @@ ele possa entender e modificar o código com mais facilidade.
 
 Exerício 2 
 são elementos que não ocupão toda a estenção da pagina, eles ocupam somente a largura de seu conteudo, uns exemplos são;
- SPAN: funciona como um containe, pode poer texto nele.
+ SPAN: funciona como um containe, pode poer texto nelegi
  BR: uma tag que quebra linha, pode ser posto em um paragafo.
  a: um elemento ancora que define um hiperlink.
 
