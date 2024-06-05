@@ -3,11 +3,11 @@
 Descrição: Escreva um programa que recebe um número e verifica se ele é um número primo ou
 não.*/
 
-
-$numero = 5;
+echo "Informe um número para verificar se é primo ou não: ";
+$numero = trim(fgets(STDIN));
 $contador = 0;
 
-for ($i = 0; $i <= $numero; $i++) {
+for ($i = 1; $i <= $numero; $i++) {
     if ($numero % $i == 0) {
         $contador++;
     }
