@@ -10,11 +10,13 @@ for( $i = 0; $i < 10; $i++ ){
 /*print_r($numero);*/
 
 $menorNum = $numero [0];
+$posicao = 0;
 
-for ($i = 1; $i < 10; $i++){
+for ($i = 0; $i < 10; $i++){
     if($numero[$i] < $menorNum){
         $menorNum = $numero [$i];
+        $posicao = $i + 1;
     }
 }
 
-echo "O menor número é: $menorNum";
+echo "O menor número é $menorNum, na posição $posicao.";
