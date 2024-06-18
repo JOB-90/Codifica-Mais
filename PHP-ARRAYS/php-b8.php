@@ -1,18 +1,17 @@
 <?php
 
-$item[] = readline("Digite o " . ($i + 1) . "º numero: ");
-while($item != -1) {
-    echo"Digite -1 para terminar ou digite outro numero para continuar: ";
-    $item[] = trim(fgets(STDIN));
-    $i++;
-}
+$item = ['carne','linguiça','suco','asinha','queijo'];
 
+$preco = [40, 50, 10, 15, 30];
 
+$participantes = readline("Quantas pessoas irão participar do churrasco? ");
 
-$precItem[] = readline("Digite o preço do item: ");
-
-
-$participantes[] = readline("Quantas pessoas irão participar do churrasco? ");
 $totalItem = 0;
 
-print_r($item);
+function soma ($preco){
+    $result = 0;
+    for ($i = 0; $i < count($preco); $i++){
+        
+    }
+
+}
